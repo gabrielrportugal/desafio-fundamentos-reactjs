@@ -51,7 +51,6 @@ const Import: React.FC = () => {
         <ImportFileContainer>
           <Upload onUpload={submitFile} />
           {!!uploadedFiles.length && <FileList files={uploadedFiles} />}
-
           <Footer>
             <p>
               <img src={alert} alt="Alert" />
@@ -61,6 +60,7 @@ const Import: React.FC = () => {
               Enviar
             </button>
           </Footer>
+          import.csv
         </ImportFileContainer>
       </Container>
     </>
