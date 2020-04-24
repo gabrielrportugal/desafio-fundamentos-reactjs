@@ -1,7 +1,4 @@
-const formatDate = (value: Date): string => {
-  const dataString = value.toString();
-  const [dataStringFormated] = dataString.split('T');
-  return dataStringFormated;
-};
+const formatDate = (date: Date): string =>
+  new Intl.DateTimeFormat('pt-BR').format(date);
 
 export default formatDate;
